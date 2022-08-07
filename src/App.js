@@ -1,9 +1,13 @@
 import './App.css';
+import Main from './components/Main';
+import NavBar from './components/NavBar';
+
 
 function App() {
   return (
     <div className="App">
-      <h1>Kibandaski Food Court</h1>
+      <NavBar />
+      <Main />
     </div>
   );
 }
