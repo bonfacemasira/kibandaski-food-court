@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import LatestRecipes from "./LatestRecipes";
 import Login from "./Login";
-import MorePopularRecipes from "./MorePopularRecipes";
+import MostPopularRecipes from "./MostPopularRecipes";
 import Pagination from "./Pagination";
 import axios from "axios";
 
@@ -22,7 +22,7 @@ function Main() {
           };
           
           axios.request(options).then(function (response) {
-            setMeals(response.data);
+            setMeals(response.data.results);
           }).catch(function (error) {
             console.error(error);
           });
@@ -36,7 +36,7 @@ function Main() {
             <Header />
             <div>
                 <LatestRecipes />
-                <MorePopularRecipes />
+                <MostPopularRecipes />
             </div>
             <Pagination />
         </div>
