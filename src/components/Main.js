@@ -2,9 +2,9 @@ import React from "react";
 // import { useEffect, useState } from "react"
 import Header from "./Header";
 import LatestRecipes from "./LatestRecipes";
-import Login from "./Login";
 import MostPopularRecipes from "./MostPopularRecipes";
 import Pagination from "./Pagination";
+import Footer from "./Footer";
 // import axios from "axios";
 
 function Main() {
@@ -33,13 +33,13 @@ function Main() {
     
     return(
         <div className="border border-black w-3/4 p-6">
-            <Login />
             <Header />
             <div>
                 <LatestRecipes />
                 <MostPopularRecipes />
             </div>
             <Pagination />
+            <Footer />
         </div>
     )
 }
