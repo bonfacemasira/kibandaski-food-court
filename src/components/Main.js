@@ -3,7 +3,6 @@ import React from "react";
 import Header from "./Header";
 import LatestRecipes from "./LatestRecipes";
 import MostPopularRecipes from "./MostPopularRecipes";
-import Pagination from "./Pagination";
 import Footer from "./Footer";
 // import axios from "axios";
 
@@ -32,13 +31,12 @@ function Main() {
     // console.log(meals)
     
     return(
-        <div className="border border-black w-4/5">
+        <div>
             <Header />
-            <div>
+            <div className="w-3/4 m-auto border">
                 <LatestRecipes />
                 <MostPopularRecipes />
             </div>
-            <Pagination />
             <Footer />
         </div>
     )

@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
     return(
-        <footer>
-            <div>
+        <footer className="bg-yellow-400">
+            <div className="flex">
                 <div>
                     <h1>Kibandaski Food Court.</h1>
                     <p>
