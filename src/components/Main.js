@@ -32,7 +32,7 @@ function Main() {
     // console.log(meals)
     
     return(
-        <div className="border border-black w-3/4 p-6">
+        <div className="border border-black w-4/5">
             <Header />
             <div>
                 <LatestRecipes />
